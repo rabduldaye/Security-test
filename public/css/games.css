@@ -1,0 +1,51 @@
+body {
+    font-family: "Poppins",
+        sans-serif;
+    background-color: rgb(28, 19, 51);
+}
+
+.title {
+
+    color: azure;
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+.bg-purple {
+    background-color: rgb(103, 99, 148) !important;
+}
+
+.cust-input {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    border-radius: 4px;
+    background-color: rgba(103, 99, 148, 0.87);
+    height: 20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    color: rgb(240, 255, 255);
+}
+
+input::placeholder {
+    color: rgba(240, 255, 255, 0.63);
+
+}
+
+
+.cust-btn {
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(103, 99, 148);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+.cust-btn:hover {
+    cursor: pointer;
+    opacity: 1;
+}

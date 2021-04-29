@@ -1,0 +1,1109 @@
+html,
+body {
+    height: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+
+h1 {
+    margin-left: 20px;
+}
+
+h1.conf {
+    margin-left: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    display: block;
+    color: #00274C;
+    background-color: #FFCB05;
+    padding: 10px;
+}
+
+div.strow {
+    margin-left: 10px;
+}
+    
+div.stcol {
+    float: left;
+    margin-right: 20px;
+    
+    
+}
+  
+  /* Clearfix (clear floats) */
+div.strow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+
+body {
+    
+    height: 100vw;;
+    margin: 0;
+    display: grid;
+    
+    background-color: #00274C;
+    
+    grid-template-rows: 90px auto 100%;
+    grid-template-areas:
+        "titlebar"
+        "navbar"
+        "contentBox";
+}
+
+form {
+    display: inline;
+}
+
+.switch-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+/*
+td label img.left {
+    vertical-align: middle;
+    
+    padding-right: 10px;
+}
+
+td label {
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+td label img.right {
+    vertical-align: middle;
+    
+    padding-left: 10px;
+}
+
+*/
+
+
+table.zeropadding {
+    padding: 0px;
+}
+
+.switch-field img.left {
+    vertical-align: middle;
+    
+    padding-right: 10px;
+    
+}
+
+
+.switch-field img.right {
+    vertical-align: middle;
+    
+    padding-left: 10px;
+    
+}
+
+.switch-field span {
+    vertical-align: middle;
+    
+}
+
+
+.larger {
+    font-size: large;
+}
+
+.centerme {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    color: #FFCB05;
+}
+
+hr{
+    height: 1px;
+    background-color: #FFCB05;
+    border: none;
+}
+.switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.teamlabel {
+   
+    background-color: #00274C;
+    color: #FFCB05;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px; 
+    
+    
+}
+
+
+.winteam1label {
+    border-right: 5px solid green;
+}
+
+.winteam2label {
+    border-left: 5px solid green;
+}
+
+.loseteamlabel {
+    border-right: 5px solid green;
+}
+
+
+.loseteam2label {
+    border-left: 5px solid green;
+}
+
+
+.switch-field label.score {
+    background-color: #FFCB05;
+    color: #00274C;
+    font-size: 14px;
+    font-weight: bold;
+    width: 20px;
+    
+    padding: 15px 16px 15px 16px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.1s ease-in-out;
+}
+  
+.switch-field label {
+    background-color: #00274C;
+    color: #FFCB05;
+    font-size: 14px;
+    font-weight: bold;
+    height: 100%;
+    
+    padding: 8px 16px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+    
+}
+
+
+.switch-field label.left {
+    
+    padding: 8px 8px 8px 16px;
+
+    
+}
+
+
+.switch-field label.right {
+    
+    padding: 8px 16px 8px 8px;
+
+    
+}
+
+.switch-field label.sel {
+    background-color: #00274C;
+    color: #FFCB05;
+    font-size: 14px;
+    font-weight: bold;
+    height: 100%;
+    
+    padding: 8px 16px;
+    margin-right: -1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.1s ease-in-out;
+}
+
+
+  
+.switch-field label.scored:hover {
+    cursor: context-menu;
+}
+
+  
+.switch-field label:hover {
+    cursor: pointer;
+}
+  
+.switch-field input:checked + label {
+    background-color: #FFCB05;
+    color: #00274C;
+    font-weight: bold;
+    box-shadow: none;
+}
+  
+.switch-field label:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+  
+.switch-field label:last-of-type {
+    border-radius: 0 4px 4px 0;
+}
+
+navbar {
+    width: 100%;
+    grid-area: navbar;
+    background-color: #FFCB05;
+}
+  
+titlebar {
+    grid-area: titlebar;
+    background-color: #00274C;
+    width: 100%;
+    color: #FFCB05;
+    font-weight: bold;
+}
+
+contentBox {
+    grid-area: contentBox;
+    background: url(../turf-repeatable.jpg);
+    
+    padding-left: 20px;
+    padding-top: 20px;
+    
+    width: 100%;
+    height: 100%;
+}
+
+td.clear {
+    background: url(../turf-repeatable.jpg);
+}
+
+content {
+    justify-content: left;
+    
+    align-items: left;
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+table.conference {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    float: left;
+}
+
+
+
+
+.alertlabel {
+    
+    color: #D8412D;
+    font-weight: bold;
+}
+
+
+.label {
+    
+    color: #FFCB05;
+    font-weight: bold;
+}
+
+form-group-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+
+
+}
+
+.subtitle {
+    font-weight: bold;
+    text-align: left;
+    color: #00274C;
+    justify-content: left;
+    
+    padding: 20px 20px 20px 20px;
+}
+
+.intbtn-group-button {
+    text-decoration: none;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    width: fit-content;
+    background-color: #FFCB05; /* Green background */
+    font-weight: bold;
+    height: min-content;
+    border: 1px solid #00274C; /* Green border */
+    color: #00274C; /* White text */
+    padding: 10px 10px;
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+
+
+  
+  
+.brl {
+    border-radius: 20px 0 0 20px;
+  
+  }
+  
+.brr {
+    border-radius: 0 20px 20px 0;
+  }
+  /* Add a background color on hover */
+  .intbtn-group-button:hover, .intbtn-group-button:focus, .intbtn-group-button:active {
+    background-color: #00274C; /* Green background */
+    font-weight: bold;
+    
+    color: #FFCB05; /* White text */
+  }
+
+
+.nav-links-container {
+    height: 100%;
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+.nav-links-container ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.nav-links-container li {
+    float: left;
+}
+
+.nav-links-container li a  {
+    display: block;
+    color: #00274C;
+    height: 100%;
+    
+    background-color:  #FFCB05;;
+   
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav-links-container li a:hover {
+    color: yellow;
+
+}
+
+
+
+.nav-links-container li a:hover, .nav-links-container li a:focus {
+    display: block;
+    color: #FFCB05;
+    background-color:  #174992;;
+    
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+table.inside td {
+    padding: 0px;
+    
+}
+
+
+
+table.inside {
+    border-style: none; 
+    padding: 0;
+    border-spacing: 0;
+    
+}
+
+table.insideth {
+    color: #00274C;
+    
+    border-spacing: 0;
+    border-collapse:collapse;
+    background-color: #FFCB05;
+    border-style: none; 
+    padding: 0;
+    border-spacing: 0;
+    
+}
+
+
+table {
+    
+    background-color: #174992;
+    color: white;
+    
+    padding: 10px 10px 10px 10px;
+    border-style: none; 
+    
+    border-radius: 20px;    
+    border-spacing: 0;
+    border-collapse: collapse;
+    
+    
+}
+/* 
+.progress {
+    background-color: #f9f9f9;
+    color: #fff;
+    box-shadow: inset 0 1px 1px rgba(100, 100, 100, 0.1);
+    box-sizing: initial;
+    color: #fff;
+    border-radius: 10px;
+    line-height: 1.182;
+    margin: 6px 0;
+    position: relative;
+    text-align: center;
+    
+    width: 100%;
+  }
+   
+  .progress-small {
+    font-size: 9px;
+    font-size: 0.5625rem;
+    height: 6px;
+    line-height: 0.875;
+  }
+  
+  .progress-large {
+    font-size: 16px;
+    font-size: 1rem;
+    height: 25px;
+    line-height: 1.7;
+  }
+  */
+  .progress > span {
+    background-color: #2bc253;
+    display: block;
+    height: 100%;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    overflow: hidden;
+    
+    width: auto;
+  }
+  .progress.progress-stacked > span {
+    display: inline-block;
+    
+    
+    float: left;
+  }
+
+  .progress.progress-stacked > span:first-child {
+    
+    border-radius: 20px  0  0 20px;
+   
+  }
+
+  .progress.progress-stacked > span:last-child {
+    border-radius: 0 20px 20px 0;
+  }
+
+  
+  
+
+table.lefthome {
+    
+    width: 100%;
+}
+
+.column {
+    float: left;
+    padding-right: 20px;
+    width: 20%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+
+
+
+table.main {
+    
+    width: 60%;
+}
+
+
+th:first-child {
+    border-radius: 20px 0 0 0;
+}
+    
+th:last-child {
+    border-radius: 0 20px 0 0;
+}
+th:only-child {
+    border-radius: 20px 20px 0 0;
+}
+
+td.top {
+    padding: 10px 10px 0px 10px;
+      
+}
+
+td.bot {
+    padding: 0px 10px 10px 10px;
+      
+}
+
+.mbold {
+    font-weight: bold;
+}
+
+td {
+    padding: 5px 10px 5px 10px;
+    
+}
+
+
+th.spec {
+    
+    padding: 0;
+    color: #00274C;
+    text-align: left;
+    
+    
+    font-weight: bold;
+    background-color: #FFCB05;
+}
+
+th {
+    padding: 10px 10px 10px 10px;
+    
+    color: #00274C;
+    text-align: left;
+    
+    
+    font-weight: bold;
+    background-color: #FFCB05;
+}
+
+
+
+th.interior {
+    border-top: 1px solid#00274C;
+    border-bottom: 1px solid#00274C;
+    border-radius: 0;
+    color: #00274C;
+    text-align: left;
+    
+    
+    font-weight: bold; 
+    background-color: #FFCB05;
+}
+
+.rightAlign {
+    align-items: right;
+    text-align: right;
+}
+
+button {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 8px;
+    background-color: #FFCB05;
+    height: 30px;
+    color: #00274C;
+   
+    
+    transition: 0.3s;
+}
+
+button.pic {
+    width: min-content;
+    display: inline;
+    background: none;
+	
+	border: 0;
+	padding: 0;
+    color: #FFCB05;
+	font: inherit;
+	cursor: pointer;
+	
+}
+
+
+button.picth {
+    width: min-content;
+    display: inline;
+    background: none;
+	
+	border: 0;
+	padding: 0;
+    color: #00274C;
+	font: inherit;
+	cursor: pointer;
+	
+}
+
+/*
+td button:hover {
+    background-color: rgb(184, 171, 0);
+    
+    cursor: pointer;
+}
+*/
+
+
+
+
+td a:link,td a:visited, td a:hover, td a:focus, td a:active {
+    text-decoration: none;
+    font-weight: bold;
+    color: gold;
+    
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    justify-content: left;
+}
+
+i {
+    
+    vertical-align: middle;
+    
+}
+
+i.what {
+    
+    vertical-align: center;
+    
+}
+
+th a:link,th a:visited, th a:hover, th a:focus, th a:active {
+    text-decoration: none;
+    font-weight: bold;
+    color: #00274C;
+    background-color: #FFCB05;
+    text-align: left;
+    padding: 0;
+    
+}
+
+.menu {
+    display:none;
+    
+}
+
+.textfield {
+    background-color: white;
+    height: 20px;
+    border-radius: 10px;
+    outline: none;
+    
+    
+}
+
+.select {
+    background-color: white;
+    height: 25px;
+    line-height:20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.alerttextfield {
+    background-color: #f8d7da;
+    height: 20px;
+    border-radius: 10px;
+    outline: none;
+    
+    
+}
+
+
+
+
+@media (max-width: 450px) {
+    .collapsable {display:none; }
+
+
+    table th:last-child {
+        border-radius: 20px 20px 0px 0px;    
+    }
+
+    
+}
+
+/*
+#loginCard,
+#loginCard2 {
+    width: 500px;
+    height: 400px;
+}
+
+#registerCard {
+    width: 500px;
+}
+
+#loginCard form,
+#loginCardTwo form {
+    overflow-y: hidden;
+}
+
+.card {
+    margin-top: 30px;
+    width: 800px; 
+    height: auto;
+    border-radius: 10px;
+    background-color: #174992;
+    color: #FFCB05;
+    margin-bottom: 30px;
+}
+
+.card-header {
+    width: 100%;
+    height: 50px;
+    background-color: #2F65A7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.card-body {
+    margin-top: 30px;
+    
+    height: auto;
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.card-content,
+.card-body form {
+    width: 90%;
+    overflow-x: auto;
+    
+}
+
+.success {
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: flex;
+    width: 100%;
+}
+
+.card-content::-webkit-scrollbar,
+form::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+}
+
+.card-content::-webkit-scrollbar-thumb,
+form::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(34, 36, 68);
+}
+
+.form-group.row {
+    width: 300px;
+    height: 70px;
+}
+
+.form-group.row label {
+    color: white;
+}
+
+.form-group.row input {
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+    border: 2px solid rgb(34, 36, 68);
+    height: 25px;
+    border-radius: 5px;
+    background-color: #00274C;
+}
+
+.form-group.row button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: rgb(255, 242, 55);
+    color: black;
+    transition: 0.4s;
+    outline: none;
+    border: none;
+}
+
+.form-group.row button:hover {
+    background-color: rgb(184, 171, 0);
+    cursor: pointer;
+}
+
+#forgotPass {
+    text-decoration: none;
+    color: white !important;
+}
+
+.form-group.row.center {
+    display: flex;
+    align-items: center;
+}
+
+/*
+.form-check {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-check input {
+    width: 30px !important;
+    display: flex;
+    align-items: center;
+}
+.form-check label {
+    height: 30px !important;
+    display: flex;
+    align-items: center;
+}
+
+.form-check label:hover {
+    cursor: pointer;
+}
+
+form {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+form button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    height: 30px;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: yellow;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: rgb(184, 171, 0);
+    cursor: pointer;
+}
+/*
+form input {
+    background-color: rgb(34, 36, 68);
+    border: none;
+    outline: none;
+    color: white;
+    width: 70%;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 4px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+form input:focus {
+    opacity: 1;
+}
+
+.col-md {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-md a {
+    color: white;
+}
+
+
+table {
+    
+    background-color: #174992;
+    color: #FFCB05;
+    
+    margin-top: 30px;
+
+    border-collapse: collapse;
+    
+}
+
+thead {
+    color: #00274C;
+    text-align: center;
+    
+    font-weight: bold;
+    background-color: #FFCB05;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+}
+
+table td,
+table th {
+    border: 0px solid rgb(34, 36, 68);
+    padding: 8px;
+    color: white;
+}
+
+.headerTable {
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.headerTable td {
+    border: none;
+    width: 100px;
+}
+
+.headerTable td a:link {
+    margin-left: 0;
+    margin-right: 10px;
+    width: 150px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+td.text-center {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+
+td a:link,
+td a:visited,
+td button {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    height: 30px;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: yellow;
+    transition: 0.3s;
+}
+
+td a:hover,
+td button:hover {
+    background-color: rgb(184, 171, 0);
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    body {
+        width: 100%;
+        grid-template-rows: 50px auto;
+        grid-template-areas:
+            "navbar"
+            "contentBox";
+    }
+
+    .nav-links-container li a {
+        font-size: small;
+        padding: 5px 7px;
+    }
+
+    .headerTable {
+        border-collapse: separate;
+        line-height: 25px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .headerTable tbody {
+        position: sticky;
+        left: 0;
+        display: flex;
+        margin-left: 100px;
+    }
+
+    .headerTable tr {
+        display: block;
+        float: left;
+        width: 200px;
+    }
+
+    .headerTable td {
+        display: block;
+    }
+
+    table {
+        width: 80%;
+        padding: 10px;
+    }
+
+    
+
+    .col-md-8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .success iframe {
+        width: 300px;
+        height: 200px;
+    }
+}
+*/
